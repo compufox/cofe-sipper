@@ -5,10 +5,21 @@ gets the instances hosted by cofespace and saves them to a text file for easy bl
 
 ## Building
 
+*`$` means system shell, `*` means lisp shell*
+
 - Install [roswell](https://github.com/roswell/roswell)
-- `ros install fukamachi/qlot`
-- `qlot install`
-- `qlot run "(progn (ql:quickload :cofe-sipper) (asdf:make))"`
+- `$ ros install fukamachi/qlot`
+- `$ qlot install`
+
+
+
+```
+$ qlot run
+* (ql:quickload :cofe-sipper)
+* (asdf:make :cofe-sipper)
+```
+
+
 
 ## License
 
